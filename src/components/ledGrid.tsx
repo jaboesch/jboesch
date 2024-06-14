@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import characterMatrix from "@/constants/characterMatrixLib";
+import clsx from "clsx";
 
 type Props = {};
 
@@ -12,7 +13,13 @@ const createRandomMatrix = () => {
   );
 };
 
-const LedMatrix = ({ character }: { character: string }) => {
+const LedMatrix = ({
+  character,
+  delay,
+}: {
+  character: string;
+  delay: number;
+}) => {
   // Initialize the matrix with random boolean values
   const emptyMatrix = Array.from({ length: 9 }, () =>
     Array.from({ length: 7 }, () => 0)
@@ -45,7 +52,7 @@ const LedMatrix = ({ character }: { character: string }) => {
         }
         return { row, col };
       });
-    }, 75); // Adjust the speed of the cursor movement
+    }, delay); // Adjust the speed of the cursor movement
 
     return () => clearInterval(interval);
   }, []);
@@ -76,12 +83,19 @@ const LedMatrix = ({ character }: { character: string }) => {
   );
 };
 
-const LedGrid = ({ value }: { value: string }) => {
-  const paddedString = value.slice(0, 12).padEnd(12, " ");
+const LedGrid = ({
+  value,
+  gridStyle,
+  delay,
+}: {
+  value: string;
+  gridStyle: string;
+  delay: number;
+}) => {
   return (
-    <div className="grid grid-cols-6 gap-1 md:gap-3 w-full">
-      {paddedString.split("").map((char, i) => (
-        <LedMatrix character={char} key={`matrix-${i}`} />
+    <div className={clsx("grid gap-1 md:gap-3 w-full", gridStyle)}>
+      {value.split("").map((char, i) => (
+        <LedMatrix character={char} key={`matrix-${i}`} delay={delay} />
       ))}
     </div>
   );
