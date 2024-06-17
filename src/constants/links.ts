@@ -24,7 +24,7 @@ export enum EXTERNAL_LINK {
     ENSEMBLE = "https://ensemble.art",
     SKETCHBOOK = "https://sketch.ensemble.art",
     TAPP = "https://tappsports.com",
-    JSYNTH = "https://jboesch.com",
-    SWORD_FIGHTING = "https://jboesch.com",
-    BLOG = "https://blog.jboesch.com",
+    JSYNTH = "/coming-soon", // TODO: Add link https://jsynth.xyz
+    SWORD_FIGHTING = "/coming-soon", // TODO: Add link
+    BLOG = "/coming-soon", // TODO: https://blog.jboesch.com AND/OR https://hashmark.xyz/jboesch
 }

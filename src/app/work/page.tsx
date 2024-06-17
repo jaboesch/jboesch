@@ -1,124 +1,40 @@
 "use client";
 
-import Button from "@/components/button";
-import Divider from "@/components/divider";
 import ContentContainer from "@/components/layout/contentContainer";
 import LedGrid from "@/components/ledGrid";
 import ProjectCard from "@/components/projectCard";
+import { WORK_DESCRIPTIONS } from "@/constants/descriptions";
 import { EXTERNAL_LINK, INTERNAL_LINK, WORK_LINK } from "@/constants/links";
 import Image from "next/image";
-import Link from "next/link";
 
 const Page = () => {
   return (
     <ContentContainer>
-      <div className="flex flex-col w-full justify-center items-center gap-5 mb-[100px]">
-        <div className="max-w-[600px] mx-auto w-full my-5 md:my-12">
+      <div className="flex flex-col w-full justify-center items-center gap-12 mb-[100px]">
+        <div className="max-w-[400px] mx-auto w-full my-5 md:my-8">
           <LedGrid value={"WORK"} gridStyle="grid-cols-4" delay={50} />
         </div>
-        <div className="w-full relative flex flex-col justify-start items-start mt-4 md:mt-8">
-          <div className="card lg:start-[-35px] h-[70px] p-1 rounded-full absolute z-10">
-            <div className="inset-card rounded-full size-full flex flex-col justify-center p-8 max-w-[400px]">
-              <img
-                className="w-full"
-                src="/assets/ensemble/wordmark.png"
-                alt="Ensemble"
-              />
-            </div>
-          </div>
-          <div className="card w-full px-5 mt-[35px] py-[60px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
-              <div className="gap-2 w-full flex mx-auto flex-col">
-                <p className="font-mono tracking-wider font-bold text-center md:text-start uppercase text-xl md:text-4xl emboss">
-                  The platform for the creative process.
-                </p>
-                <Divider className="my-5" />
-                <h2 className="font-exa font-light text-center tracking-tight align-bottom lg:text-start text-3xl">
-                  Involvement
-                </h2>
-                <p className="font-serif text-black/70 leading-snug text-base md:text-lg text-justify lg:text-start mb-1">
-                  I have been working at Ensemble as a technical co-founder
-                  since the summer of 2022. As the sole engineer, I have
-                  architected and built the entire tech stack, including a cloud
-                  function-based API, a robust blockchain cache interface, and a
-                  beautiful web experience.
-                </p>
-                <h2 className="font-exa font-light text-center align-bottom lg:text-start text-3xl">
-                  Summary
-                </h2>
-                <p className="font-serif text-black/70 leading-snug text-base md:text-lg text-justify lg:text-start mb-4">
-                  On Ensemble, artists document and sell the behind-the-scenes
-                  materials from their creative process. Our aim is to support
-                  artists in creating high quality context around their work and
-                  to unlock the value in the artifacts which come from it,
-                  including sketches, drafts, and more.
-                </p>
-                <div className="mt-auto flex flex-row gap-4">
-                  <Button href={INTERNAL_LINK.WORK + WORK_LINK.ENSEMBLE}>
-                    Learn More
-                  </Button>
-                  <Button href={EXTERNAL_LINK.ENSEMBLE} inNewWindow>
-                    Visit
-                  </Button>
-                </div>
-              </div>
-              <div className="gap-2 w-full flex mx-auto flex-col">
-                <Image
-                  alt="Home page"
-                  src="/assets/ensemble/home-page.png"
-                  className="object-scale-down w-full rounded-xl border"
-                  width={1600}
-                  height={900}
-                />
-                <p className="font-mono text-center text-sm font-extralight">
-                  Screenshot of the landing page
-                </p>
-                <div className="hidden md:contents">
-                  <Image
-                    alt="Home page"
-                    src="/assets/ensemble/artifact-explore-page.png"
-                    className="object-scale-down w-full rounded-xl border mt-4"
-                    width={1600}
-                    height={900}
-                  />
-                  <p className="font-mono text-center text-sm font-extralight">
-                    Screenshot of the explore page
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <ProjectCard
           wordmark={
             <img
-                className="w-full"
-                src="/assets/ensemble/wordmark.png"
-                alt="Ensemble"
-              />
+              className="w-full opacity-90"
+              src="/assets/ensemble/wordmark.png"
+              alt="Ensemble"
+            />
           }
-          headline="The platform for the creative process."
+          headline={WORK_DESCRIPTIONS.ensemble.headline}
           headingOne="Involvement"
-          paragraphOne="I have been working at Ensemble as a technical co-founder
-                  since the summer of 2022. As the sole engineer, I have
-                  architected and built the entire tech stack, including a cloud
-                  function-based API, a robust blockchain cache interface, and a
-                  beautiful web experience."
+          paragraphOne={WORK_DESCRIPTIONS.ensemble.involvement}
           headingTwo="Summary"
-          paragraphTwo="On Ensemble, artists document and sell the behind-the-scenes
-                  materials from their creative process. Our aim is to support
-                  artists in creating high quality context around their work and
-                  to unlock the value in the artifacts which come from it,
-                  including sketches, drafts, and more."
+          paragraphTwo={WORK_DESCRIPTIONS.ensemble.summary}
           internalLink={INTERNAL_LINK.WORK + WORK_LINK.ENSEMBLE}
           externalLink={EXTERNAL_LINK.ENSEMBLE}
         >
           <div className="gap-2 w-full flex mx-auto flex-col">
             <Image
-              alt="Home page"
+              alt="Landing page"
               src="/assets/ensemble/home-page.png"
-              className="object-scale-down w-full rounded-xl border"
+              className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
               width={1600}
               height={900}
             />
@@ -127,9 +43,9 @@ const Page = () => {
             </p>
             <div className="hidden md:contents">
               <Image
-                alt="Home page"
+                alt="Explore page"
                 src="/assets/ensemble/artifact-explore-page.png"
-                className="object-scale-down w-full rounded-xl border mt-4"
+                className="object-scale-down w-full rounded-xl border mt-4 brightness-[99%] hover:brightness-100 transition duration-300"
                 width={1600}
                 height={900}
               />
@@ -145,27 +61,91 @@ const Page = () => {
             <img
               alt="Sketchbook"
               src="/assets/sketchbook/wordmark.png"
-              className="w-full max-w-[250px] mx-auto"
+              className="w-full max-w-[250px] mx-auto opacity-90"
             />
           }
-          headline="A Sketchbook for the digital age."
+          headline={WORK_DESCRIPTIONS.sketchbook.headline}
           headingOne="Involvement"
-          paragraphOne="In the fall of 2023, I created a new Ensemble product called Sketchbook. The app features a mobile-first design, a custom NFC-based authentication schema, and an image processing engine."
+          paragraphOne={WORK_DESCRIPTIONS.sketchbook.involvement}
           headingTwo="Summary"
-          paragraphTwo="The Ensemble Sketchbook allows owners to easily digitize and mint their sketches. Sketchbooks are digitally enabled with token-bound NFC chips used to authenticate Sketchbook owners. Sketches are minted on BASE, an Ethereum L2, and can be viewed/collected on Ensemble."
+          paragraphTwo={WORK_DESCRIPTIONS.sketchbook.summary}
           internalLink={INTERNAL_LINK.WORK + WORK_LINK.SKETCHBOOK}
           externalLink={EXTERNAL_LINK.SKETCHBOOK}
         >
-          <Image
-            alt="Home page"
-            src="/assets/ensemble/home-page.png"
-            className="object-scale-down w-full rounded-xl border"
-            width={1600}
-            height={900}
-          />
-          <p className="font-mono text-center text-sm font-extralight">
-            Screenshot of the landing page
-          </p>
+          <div className="gap-2 w-full flex mx-auto flex-col">
+            <div className="contents md:hidden">
+              <Image
+                alt="Product image"
+                src="/assets/sketchbook/sketchbook-cover.png"
+                className="object-scale-down w-full rounded-xl border"
+                width={1600}
+                height={900}
+              />
+              <p className="font-mono text-center text-sm font-extralight">
+                Photo of a Sketchbook
+              </p>
+            </div>
+            <div className="hidden md:grid grid-cols-2 w-full  gap-4">
+              <Image
+                alt="Create page"
+                src="/assets/sketchbook/shot-1.png"
+                className="object-scale-down w-full rounded-xl border mt-4 brightness-[99%] hover:brightness-100 transition duration-300"
+                width={400}
+                height={800}
+              />
+              <Image
+                alt="Sale page"
+                src="/assets/sketchbook/shot-3.png"
+                className="object-scale-down w-full rounded-xl border mt-4 brightness-[99%] hover:brightness-100 transition duration-300"
+                width={400}
+                height={800}
+              />
+            </div>
+            <p className="hidden md:inline-block font-mono text-center text-sm font-extralight">
+              Screenshots from the Sketchbook app
+            </p>
+          </div>
+        </ProjectCard>
+        <ProjectCard
+          wordmark={
+            <img
+              className="w-full max-w-[150px] mx-auto opacity-90"
+              src="/assets/tapp/wordmark.png"
+              alt="Tapp"
+            />
+          }
+          headline={WORK_DESCRIPTIONS.tapp.headline}
+          headingOne="Involvement"
+          paragraphOne={WORK_DESCRIPTIONS.tapp.involvement}
+          headingTwo="Summary"
+          paragraphTwo={WORK_DESCRIPTIONS.tapp.summary}
+          internalLink={INTERNAL_LINK.WORK + WORK_LINK.TAPP}
+          externalLink={EXTERNAL_LINK.TAPP}
+        >
+          <div className="gap-2 w-full flex mx-auto flex-col">
+            <Image
+              alt="Landing page"
+              src="/assets/tapp/tools-with-device.png"
+              className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
+              width={1600}
+              height={900}
+            />
+            <p className="font-mono text-center text-sm font-extralight">
+              Tapp toolkit and device mockup
+            </p>
+            <div className="hidden md:contents">
+              <Image
+                alt="Explore page"
+                src="/assets/tapp/data-graphics.png"
+                className="object-scale-down w-full rounded-xl mt-4 brightness-[99%] hover:brightness-100 transition duration-300"
+                width={1600}
+                height={900}
+              />
+              <p className="font-mono text-center text-sm font-extralight">
+                Data graphics generated by Tapp
+              </p>
+            </div>
+          </div>
         </ProjectCard>
       </div>
     </ContentContainer>

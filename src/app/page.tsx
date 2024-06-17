@@ -3,7 +3,12 @@
 import Divider from "@/components/divider";
 import ContentContainer from "@/components/layout/contentContainer";
 import LedGrid from "@/components/ledGrid";
-import { EXTERNAL_LINK } from "@/constants/links";
+import {
+  ABOUT_DESCRIPTIONS,
+  PROJECT_DESCRIPTIONS,
+  WORK_DESCRIPTIONS,
+} from "@/constants/descriptions";
+import { INTERNAL_LINK, PROJECT_LINK, WORK_LINK } from "@/constants/links";
 import Link from "next/link";
 
 export default function Home() {
@@ -28,12 +33,7 @@ export default function Home() {
               Hello!
             </h2>
             <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
-              My name is Jayden, and I create applications and art with
-              software. I have worked as a technical co-founder at two startups,
-              building the entire tech stack from the ground up. Beyond
-              functional code, I also love blending creativity and technology to
-              bring unique ideas to life through artistic code projects. Take a
-              look around to learn more about my work!
+              {ABOUT_DESCRIPTIONS.summary}
             </p>
           </div>
         </div>
@@ -51,33 +51,26 @@ export default function Home() {
                 Here is what I am working on right now.
               </p>
               <Divider className="my-5" />
-              <h2 className="font-exa text-center align-bottom lg:text-start text-3xl">
+              <Link
+                href={INTERNAL_LINK.WORK + WORK_LINK.ENSEMBLE}
+                className="font-exa animated-underline text-center align-bottom lg:text-start text-3xl"
+              >
                 Ensemble
-              </h2>
+              </Link>
               <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
-                I am currently working as a technical co-founder at{" "}
-                <Link
-                  href={EXTERNAL_LINK.ENSEMBLE}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Ensemble
-                </Link>
-                .
+                {WORK_DESCRIPTIONS.ensemble.involvement}
               </p>
               <Divider className="my-5" />
-              <h2 className="font-exa text-center align-bottom lg:text-start text-3xl">
+              <h2 className="font-exa text-center align-bottom lg:text-start text-3xl"></h2>
+              <Link
+                href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
+                className="font-exa animated-underline text-center align-bottom lg:text-start text-3xl"
+              >
                 JSynth
-              </h2>
+              </Link>
               <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
-                This describes a project, and I create applications and art with
-                software. I have worked as a technical co-founder at two
-                startups, building the entire tech stack from the ground up.
-                Beyond functional code, I also love blending creativity and
-                technology to bring unique ideas to life through artistic code
-                projects. Take a look around to learn more about my work!
+                {PROJECT_DESCRIPTIONS.jsynth.involvement}
               </p>
-              <Divider className="my-5" />
             </div>
           </div>
         </div>

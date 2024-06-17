@@ -1,7 +1,6 @@
 import React from "react";
 import Divider from "./divider";
 import Button from "./button";
-import { INTERNAL_LINK } from "@/constants/links";
 
 type Props = {
   wordmark: React.ReactNode;
