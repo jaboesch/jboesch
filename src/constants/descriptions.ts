@@ -5,6 +5,16 @@ export const ABOUT_DESCRIPTIONS = {
     functional code, I also love blending creativity and technology to
     bring unique ideas to life through artistic code projects. Take a
     look around to learn more about my work!`,
+  aboutMe: `I am a software engineer based in NYC. I have a passion for...`,
+};
+
+export const ABOUT_JSON = {
+  name: "Jayden Boesch",
+  college: "University of Nebraska, Lincoln",
+  degree: "Bachelor of Science in Software Engineering",
+  distinction: "Graduated with Highest Distinction",
+  honors: "Jeffrey S. Raikes School and University Honors Program",
+  graduation: "May of 2023",
 };
 
 export const WORK_DESCRIPTIONS = {

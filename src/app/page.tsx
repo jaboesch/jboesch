@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/components/button";
 import Divider from "@/components/divider";
 import ContentContainer from "@/components/layout/contentContainer";
 import LedGrid from "@/components/ledGrid";
@@ -32,9 +33,15 @@ export default function Home() {
             <h2 className="font-exa text-center lg:text-start text-3xl">
               Hello!
             </h2>
-            <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
+            <p className="font-serif text-base md:text-lg text-justify lg:text-start">
               {ABOUT_DESCRIPTIONS.summary}
             </p>
+            <Link
+              href={INTERNAL_LINK.ABOUT}
+              className="font-exa font-extralight text-base text-black/80 tracking-tighter animated-underline"
+            >
+              Learn more &gt;
+            </Link>
           </div>
         </div>
         <div className="w-full relative flex flex-col justify-start items-center mt-10 md:mt-24">
@@ -71,6 +78,11 @@ export default function Home() {
               <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
                 {PROJECT_DESCRIPTIONS.jsynth.involvement}
               </p>
+              <Divider className="my-5" />
+              <div className="flex flex-col md:flex-row mt-5 gap-8">
+                <Button href={INTERNAL_LINK.WORK}>Explore Work</Button>
+                <Button href={INTERNAL_LINK.PROJECTS}>Explore Projects</Button>
+              </div>
             </div>
           </div>
         </div>

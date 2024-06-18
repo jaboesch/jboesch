@@ -122,9 +122,9 @@ body {
 .crt-screen {
   position: relative;
   background: linear-gradient(0deg, #1c1c1c, #1f1f1f, #1c1c1c);
-  border: 2px solid #d7d7d7;
+  /* border: 2px solid #d7d7d7; */
   backdrop-filter: blur(10px);
-  box-shadow: inset 0 0 10px #d7d7d7, 0 0 10px #d7d7d7;
+  /* box-shadow: inset 0 0 10px #d7d7d7, 0 0 10px #d7d7d7; */
 }
 
 /* Gradient overlay for screen curvature effect */
@@ -137,5 +137,5 @@ body {
   bottom: 0;
   background: #ffffff0f;
   filter: blur(10px);
-  border-radius: 100px;
+  /* border-radius: 100px; */
 }
