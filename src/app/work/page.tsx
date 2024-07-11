@@ -42,14 +42,14 @@ const Page = () => {
         >
           <div className="gap-2 w-full flex mx-auto flex-col">
             <Image
-              alt="Landing page"
-              src="/assets/ensemble/home-page.png"
+              alt="Game Assets"
+              src="/assets/ensemble/game-assets.png"
               className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
               width={1600}
               height={900}
             />
             <p className="font-mono text-center text-sm font-extralight">
-              Screenshot of the landing page
+              Game assets on Ensemble
             </p>
             <div className="hidden md:contents">
               <Image
@@ -60,7 +60,7 @@ const Page = () => {
                 height={900}
               />
               <p className="font-mono text-center text-sm font-extralight">
-                Screenshot of the explore page
+                Sketches on Ensemble
               </p>
             </div>
           </div>

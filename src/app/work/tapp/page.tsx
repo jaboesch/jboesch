@@ -9,14 +9,9 @@ import React from "react";
 type Props = {};
 
 const Page = (props: Props) => {
-  const headingStyle =
-    "font-exa tracking-tight font-light align-bottom text-xl md:text-3xl";
-  const paragraphStyle =
-    "font-serif text-black/70 leading-snug text-base md:text-lg";
-
   return (
     <ArticleContainer>
-      <div className="flex flex-col gap-2 w-full">
+      <div className="flex flex-col gap-4 md:gap-3 w-full">
         <img
           className="w-full max-w-[150px] md:max-w-[250px] mx-auto opacity-90"
           src="/assets/tapp/wordmark.png"
@@ -28,6 +23,17 @@ const Page = (props: Props) => {
         <Divider className="my-5" />
         <h1>What is Tapp Sports?</h1>
         <p>{WORK_DESCRIPTIONS.tapp.summary}</p>
+        <br />
+        <Image
+          alt="Landing page"
+          src="/assets/tapp/tools-with-device.png"
+          className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
+          width={1600}
+          height={900}
+        />
+        <p className="font-mono text-center text-sm font-extralight">
+          Tapp toolkit and device mockup
+        </p>
         <br />
         <h1>What was my role?</h1>
         <p>
@@ -41,6 +47,7 @@ const Page = (props: Props) => {
         </p>
         <br />
         <h1>What did I accomplish?</h1>
+        <h3>Company</h3>
         <p>
           Throughout my time at Tapp Sports, we worked with over 20 baseball
           teams, 500 athletes, and collected 100,000+ data points. I am proud to
@@ -49,12 +56,12 @@ const Page = (props: Props) => {
           coaches who were able to spend less time managing data and more time
           coaching.
         </p>
-        <blockquote>
-          “Compared to last year, this app has saved my hundreds of hours
+        <blockquote className="font-mono border-l-2 border-black/50 pl-2 text-xl text-black/70">
+          “Compared to last year, this app has saved me hundreds of hours
           staring at excel sheets and our players have become much more
           competitive during practice.”
         </blockquote>
-        <span>
+        <span className="caption !text-start">
           - Danny Marcuzo, Assistant Coach for the Husker Baseball Team
         </span>
         <p>
@@ -63,6 +70,8 @@ const Page = (props: Props) => {
             by Play&apos;N Sports.
           </strong>
         </p>
+        <br />
+        <h3>Community</h3>
         <p>
           Another significant accomplishment from my work at Tapp Sports is the
           lasting impact we made on the startup community in Lincoln, NE. We
@@ -114,32 +123,30 @@ const Page = (props: Props) => {
           product for our customers.
         </p>
         <br />
-        <h1>Links & Press</h1>
+        <h1>Press</h1>
         <Divider className="my-5" />
+
         <Link
           href={EXTERNAL_LINK.TAPP_PRESS_1}
-          className="hyperlink"
+          className="hyperlink truncate max-w-full font-serif text-black/90 leading-snug text-lg md:text-xl md:leading-snug"
         >
-          KETV News: Tapp Sports - UNL students create app that tracks baseball
-          stats
+          KETV News: UNL students create app that tracks baseball stats
         </Link>
+
         <Link
           href={EXTERNAL_LINK.TAPP_PRESS_2}
-          className="font-mono text-lg  animated-underline"
+          className="hyperlink truncate max-w-full font-serif text-black/90 leading-snug text-lg md:text-xl md:leading-snug"
         >
-          Select Lincoln News: Five Nebraska Startups Selected for gBETA Lincoln
-        </Link>
-        <Link href={EXTERNAL_LINK.TAPP_STARTUP_STUDIO}>
-          UNL News: Students turn entrepreneurs at the Raikes School
+          LPED: Five Nebraska Startups Selected for gBETA Lincoln
         </Link>
         <Link
-          href={EXTERNAL_LINK.TAPP}
-          className="font-mono text-lg  animated-underline"
+          href={EXTERNAL_LINK.TAPP_STARTUP_STUDIO}
+          className="hyperlink truncate max-w-full font-serif text-black/90 leading-snug text-lg md:text-xl md:leading-snug"
         >
-          Tapp Website
+          UNL News: Students turn entrepreneurs at the Raikes School
         </Link>
         <br />
-        <h1 className={headingStyle}>Gallery</h1>
+        <h1>Gallery</h1>
         <Divider className="my-5" />
         <div className="gap-3 w-full flex mx-auto flex-col">
           <div className="flex flex-col mb-1 gap-0 md:flex-row justify-around md:gap-2 w-full">
@@ -168,17 +175,6 @@ const Page = (props: Props) => {
               </p>
             </div>
           </div>
-          <Image
-            alt="Landing page"
-            src="/assets/tapp/tools-with-device.png"
-            className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
-            width={1600}
-            height={900}
-          />
-          <p className="font-mono text-center text-sm font-extralight">
-            Tapp toolkit and device mockup
-          </p>
-
           <Image
             alt="Explore page"
             src="/assets/tapp/data-graphics.png"
