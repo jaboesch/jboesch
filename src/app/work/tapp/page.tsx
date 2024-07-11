@@ -60,7 +60,7 @@ const Page = (props: Props) => {
         <p>
           <strong>
             In 2023, after years of dedicated effort, Tapp Sports was acquired
-            by Play'N Sports.
+            by Play&apos;N Sports.
           </strong>
         </p>
         <p>

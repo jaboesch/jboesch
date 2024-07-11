@@ -22,7 +22,6 @@ const Page = () => {
           headingTwo="Summary"
           paragraphTwo={PROJECT_DESCRIPTIONS.jsynth.summary}
           internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
-          externalLink={EXTERNAL_LINK.JSYNTH}
         >
           <div className="gap-2 w-full flex mx-auto flex-col">
             <Image

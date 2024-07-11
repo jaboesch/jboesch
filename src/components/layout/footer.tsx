@@ -63,12 +63,6 @@ const Footer = (props: Props) => {
               Ensemble
             </Link>
             <Link
-              href={INTERNAL_LINK.WORK + WORK_LINK.SKETCHBOOK}
-              className={linkStyles}
-            >
-              Sketchbook
-            </Link>
-            <Link
               href={INTERNAL_LINK.WORK + WORK_LINK.TAPP}
               className={linkStyles}
             >
@@ -86,7 +80,7 @@ const Footer = (props: Props) => {
             >
               JSynth
             </Link>
-            <Link
+            {/* <Link
               href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.SWORD_FIGHTING}
               className={linkStyles}
             >
@@ -97,7 +91,7 @@ const Footer = (props: Props) => {
               className={linkStyles}
             >
               Hashmark Blog
-            </Link>
+            </Link> */}
           </div>
         </div>
       </ContentContainer>

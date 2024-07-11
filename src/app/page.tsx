@@ -65,7 +65,7 @@ export default function Home() {
                 Ensemble
               </Link>
               <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
-                {WORK_DESCRIPTIONS.ensemble.involvement}
+                {WORK_DESCRIPTIONS.ensemble.involvementSummary}
               </p>
               <Divider className="my-5" />
               <h2 className="font-exa text-center align-bottom lg:text-start text-3xl"></h2>

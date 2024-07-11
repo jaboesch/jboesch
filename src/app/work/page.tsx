@@ -39,7 +39,6 @@ const Page = () => {
           headingTwo="Summary"
           paragraphTwo={WORK_DESCRIPTIONS.ensemble.summary}
           internalLink={INTERNAL_LINK.WORK + WORK_LINK.ENSEMBLE}
-          externalLink={EXTERNAL_LINK.ENSEMBLE}
         >
           <div className="gap-2 w-full flex mx-auto flex-col">
             <Image

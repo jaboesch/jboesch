@@ -15,11 +15,11 @@ const Page = (props: Props) => {
       <ArticleContainer>
         <div className="flex flex-col gap-4 md:gap-3 w-full">
           <img
-            className="w-full max-w-[500px] mb-4 md:mb-8 mx-auto opacity-90"
+            className="w-full max-w-[500px] my-5 mx-auto opacity-90"
             src="/assets/ensemble/wordmark.png"
             alt="Ensemble"
           />
-          <div className="font-mono text-center tracking-wider font-bold uppercase text-3xl md:text-5xl emboss">
+          <div className="font-mono max-w-[500px] mx-auto text-center tracking-wider font-bold uppercase text-3xl md:text-4xl emboss">
             The platform for the creative process.
           </div>
           <Divider className="my-5" />
