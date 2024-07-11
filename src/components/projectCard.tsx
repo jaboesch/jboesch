@@ -6,11 +6,10 @@ type Props = {
   wordmark: React.ReactNode;
   headline: string;
   headingOne: string;
-  paragraphOne: string;
+  paragraphOne: string | React.ReactNode;
   headingTwo: string;
-  paragraphTwo: string;
+  paragraphTwo: string | React.ReactNode;
   internalLink: string;
-  externalLink: string;
   children: React.ReactNode | React.ReactNode[];
 };
 
@@ -22,7 +21,6 @@ const ProjectCard = ({
   headingTwo,
   paragraphTwo,
   internalLink,
-  externalLink,
   children,
 }: Props) => {
   return (
@@ -51,11 +49,8 @@ const ProjectCard = ({
             <p className="font-serif text-black/70 leading-snug text-base md:text-lg text-justify lg:text-start mb-4">
               {paragraphTwo}
             </p>
-            <div className="mt-auto flex flex-row gap-4">
+            <div className="flex flex-row gap-4">
               <Button href={internalLink}>Learn More</Button>
-              <Button href={externalLink} inNewWindow>
-                Visit
-              </Button>
             </div>
           </div>
           <div className="gap-2 w-full flex mx-auto flex-col">{children}</div>

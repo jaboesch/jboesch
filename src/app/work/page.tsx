@@ -24,7 +24,18 @@ const Page = () => {
           }
           headline={WORK_DESCRIPTIONS.ensemble.headline}
           headingOne="Involvement"
-          paragraphOne={WORK_DESCRIPTIONS.ensemble.involvement}
+          paragraphOne={
+            <>
+              <span className="font-bold">
+                - {WORK_DESCRIPTIONS.ensemble.role}&nbsp;&nbsp;
+              </span>
+              <span className="font-extralight tracking-wider">
+                ({WORK_DESCRIPTIONS.ensemble.date})
+              </span>
+              <br />
+              <span>- {WORK_DESCRIPTIONS.ensemble.involvementSummary}</span>
+            </>
+          }
           headingTwo="Summary"
           paragraphTwo={WORK_DESCRIPTIONS.ensemble.summary}
           internalLink={INTERNAL_LINK.WORK + WORK_LINK.ENSEMBLE}
@@ -56,7 +67,7 @@ const Page = () => {
           </div>
         </ProjectCard>
 
-        <ProjectCard
+        {/* <ProjectCard
           wordmark={
             <img
               alt="Sketchbook"
@@ -105,7 +116,7 @@ const Page = () => {
               Screenshots from the Sketchbook app
             </p>
           </div>
-        </ProjectCard>
+        </ProjectCard> */}
         <ProjectCard
           wordmark={
             <img
@@ -116,11 +127,10 @@ const Page = () => {
           }
           headline={WORK_DESCRIPTIONS.tapp.headline}
           headingOne="Involvement"
-          paragraphOne={WORK_DESCRIPTIONS.tapp.involvement}
+          paragraphOne={WORK_DESCRIPTIONS.tapp.involvementSummary}
           headingTwo="Summary"
           paragraphTwo={WORK_DESCRIPTIONS.tapp.summary}
           internalLink={INTERNAL_LINK.WORK + WORK_LINK.TAPP}
-          externalLink={EXTERNAL_LINK.TAPP}
         >
           <div className="gap-2 w-full flex mx-auto flex-col">
             <Image

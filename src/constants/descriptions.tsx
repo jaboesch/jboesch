@@ -19,37 +19,20 @@ export const ABOUT_JSON = {
 
 export const WORK_DESCRIPTIONS = {
   ensemble: {
+    role: `Technical Co-Founder`,
+    date: `01/2023 - Present`,
     headline: `The platform for the creative process.`,
-    summary: `On Ensemble, artists document and sell the behind-the-scenes
-        materials from their creative process. Our aim is to support artists in 
-        creating high quality context around their work and to unlock the value 
-        in the artifacts which come from it, including sketches, drafts, and more.`,
-    involvement: `I have been working at Ensemble as a technical co-founder since 
-        the summer of 2022. As the sole engineer, I have architected and built the 
-        entire tech stack, including a cloud function-based API, a robust blockchain 
-        cache interface, and a beautiful web experience.`,
-  },
-  sketchbook: {
-    headline: `A Sketchbook for the digital age.`,
-    summary: `The Ensemble Sketchbook allows owners to easily digitize and mint 
-        their sketches. Sketchbooks are digitally enabled with token-bound NFC chips 
-        used to authenticate Sketchbook owners. Sketches are minted on BASE, an 
-        Ethereum L2, and can be viewed/collected on Ensemble.`,
-    involvement: `In the fall of 2023, I created a new Ensemble product called 
-        Sketchbook. The app features a mobile-first design, a custom NFC-based 
-        authentication schema, and an image processing engine.`,
+    summary: `Ensemble is a platform where artists document and sell behind-the-scenes materials from their creative process. These assets may include sketches, storyboards, 3D models, and any other artifacts that come from the creation of an artwork.`,
+    involvementSummary: `Independently designed and built the entire tech stack, led major architectural decisions, and played a key role in strategic planning and business growth.`,
   },
   tapp: {
     headline: `Track the player development metrics that matter.`,
-    summary: `Tapp Sports is an athlete evaluation tool that helps coaches input 
-        and analyze player performance data. Using our customizable evaluation templates, 
-        coaches can save hours each day spent aggregating, formatting, and comprehending 
-        data.`,
-    involvement: `Started in winter of 2020 and sold in winter of 2023, Tapp Sports 
-        was my first startup. As a technical co-founder, I worked closely with my team 
-        to design, iterate, and build a customizable metric-tracking web app, 
-        user-friendly iOS client app, data-centric API service, and an intuitive data 
-        visualization engine.`,
+    role: `Technical Co-Founder`,
+    date: `01/2020 - 01/2023`,
+    summary: `Tapp Sports is an athlete evaluation tool that helps coaches input and analyze player performance data. Using Tapp's customizable evaluation templates, coaches can save hours each day spent aggregating, formatting, and comprehending data.`,
+    involvementSummary: `Led the development and design of our web app, mobile app, API, and
+        CI/CD pipelines, driving a strategic vision for our technology
+        stack.`,
   },
 };
 
