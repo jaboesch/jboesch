@@ -188,7 +188,7 @@ const Page = (props: Props) => {
             aria-label="Ensemble Website"
           >
             <div className="card w-full p-5 font-mono text-center tracking-wider font-bold uppercase text-3xl md:text-5xl emboss hover:text-white transition duration-500">
-              Learn More at https://ensemble.art
+              Learn More at ensemble.art
             </div>
           </Link>
         </div>
