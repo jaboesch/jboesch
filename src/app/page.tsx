@@ -4,6 +4,7 @@ import Button from "@/components/button";
 import Divider from "@/components/divider";
 import ContentContainer from "@/components/layout/contentContainer";
 import LedGrid from "@/components/ledGrid";
+import MiniProjectCard from "@/components/miniProjectCard";
 import {
   ABOUT_DESCRIPTIONS,
   PROJECT_DESCRIPTIONS,
@@ -44,47 +45,40 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="w-full relative flex flex-col justify-start items-center mt-10 md:mt-24">
-          <div className="card md:w-full w-[80%] max-w-[600px] h-[70px] p-1 rounded-full absolute z-10">
-            <div className="inset-card rounded-full size-full flex flex-col justify-center p-2">
-              <h2 className="font-exa text-center tracking-tight text-2xl md:text-3xl">
-                Current Work
-              </h2>
-            </div>
-          </div>
-          <div className="card w-full px-5 mt-[35px] py-[60px]">
-            <div className="max-w-[600px] gap-2 w-full flex mx-auto flex-col justify-center">
-              <p className="font-mono font-light text-base md:text-lg text-center">
-                Here is what I am working on right now.
-              </p>
-              <Divider className="my-5" />
-              <Link
-                href={INTERNAL_LINK.WORK + WORK_LINK.ENSEMBLE}
-                className="font-exa animated-underline text-center align-bottom lg:text-start text-3xl"
-              >
-                Ensemble
-              </Link>
-              <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
-                {WORK_DESCRIPTIONS.ensemble.involvementSummary}
-              </p>
-              <Divider className="my-5" />
-              <h2 className="font-exa text-center align-bottom lg:text-start text-3xl"></h2>
-              <Link
-                href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
-                className="font-exa animated-underline text-center align-bottom lg:text-start text-3xl"
-              >
-                JSynth
-              </Link>
-              <p className="font-serif text-base md:text-lg text-justify lg:text-start mb-1">
-                {PROJECT_DESCRIPTIONS.jsynth.involvement}
-              </p>
-              <Divider className="my-5" />
-              <div className="flex flex-col md:flex-row mt-5 gap-8">
-                <Button href={INTERNAL_LINK.WORK}>Explore Work</Button>
-                <Button href={INTERNAL_LINK.PROJECTS}>Explore Projects</Button>
-              </div>
-            </div>
-          </div>
+
+        <h2 className="font-exa text-center mt-[50px] md:mt-[125px] tracking-tight text-2xl md:text-3xl">
+          My Work
+        </h2>
+        <Divider className="my-5" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
+          <MiniProjectCard
+            headline={WORK_DESCRIPTIONS.ensemble.headline}
+            internalLink={INTERNAL_LINK.WORK + WORK_LINK.ENSEMBLE}
+          >
+            <img
+              className="max-w-[350px] mb-1 w-full opacity-90"
+              src="/assets/ensemble/wordmark.png"
+              alt="Ensemble"
+            />
+          </MiniProjectCard>
+          <MiniProjectCard
+            headline={WORK_DESCRIPTIONS.tapp.headline}
+            internalLink={INTERNAL_LINK.WORK + WORK_LINK.TAPP}
+          >
+            <img
+              className="w-full max-w-[150px] opacity-90"
+              src="/assets/tapp/wordmark.png"
+              alt="Tapp"
+            />
+          </MiniProjectCard>
+          <MiniProjectCard
+            headline={PROJECT_DESCRIPTIONS.jsynth.headline}
+            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
+          >
+            <h2 className="font-exa uppercase text-black/90 font-medium text-3xl">
+              JSynth
+            </h2>
+          </MiniProjectCard>
         </div>
       </div>
     </ContentContainer>

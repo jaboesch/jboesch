@@ -31,9 +31,7 @@ const Page = (props: Props) => {
           width={1600}
           height={900}
         />
-        <p className="font-mono text-center text-sm font-extralight">
-          Tapp toolkit and device mockup
-        </p>
+        <span className="caption">Tapp toolkit and device mockup</span>
         <br />
         <h1>What was my role?</h1>
         <p>
@@ -62,7 +60,7 @@ const Page = (props: Props) => {
           competitive during practice.”
         </blockquote>
         <span className="caption !text-start">
-          - Danny Marcuzo, Assistant Coach for the Husker Baseball Team
+          - Danny Marcuzzo, Assistant Coach for the Husker Baseball Team
         </span>
         <p>
           <strong>
@@ -103,24 +101,54 @@ const Page = (props: Props) => {
         </p>
         <br />
         <h1>What did I learn?</h1>
+        <h3>Software Engineering</h3>
         <p>
-          Working on Tapp Sports and interfacing with our customers has taught
-          me a lot about how to lead a software development team using agile
-          methods, turning feedback into actionable development tasks. I learned
-          to deal with failure after losing pitch competitions, receiving poor
-          customer feedback, and having tough conversations with my team. I
-          learned the importance of community, and how impactful good
-          relationships can be while building a company. As the director of our
-          accelerator program likes to say, “Great trees never grow alone.”
+          I learned how to build the technical stack for Tapp Sports on the fly,
+          teaching myself new technologies for each layer. It began with
+          creating a React web application and then a React Native mobile app. I
+          also worked on Node/TypeScript and Python-based cloud functions,
+          managed a NoSQL database, and implemented CI/CD and QA pipelines.
+          Learning to build each each piece individually helped me understand
+          the system at a high level and architect a robust, scalable product.
         </p>
+        <br />
+        <h3>Product Management</h3>
         <p>
-          Beyond the numerous life lessons, I learned a lot as a software
-          engineer. I taught myself countless new technologies while building my
-          first React web application, React Native mobile application, Node and
-          Python based cloud functions, NoSQL database, CI/CD and QA pipelines,
-          etc. I learned how to develop each layer of the tech stack one step at
-          a time, steadily building and rebuilding towards a stable, functional
-          product for our customers.
+          Communicating directly with our users was a critical step throughout
+          the development process, and it taught me many lessons in effective
+          product management. It showed me how to lead a software development
+          team using agile methods, transforming user feedback into actionable
+          tasks. Listening to our power users and implementing their feedback
+          made our app more intuitive and user-friendly, while also forming
+          strong relationships with customers who were eager to help us succeed.
+        </p>
+        <br />
+        <h3>Life Lessons</h3>
+        <p>
+          Dealing with failure was tough. From losing pitch competitions to
+          navigating through negative feedback and challenging team dynamics,
+          each setback presented a learning experience. These challenges built
+          resilience within our team and taught me the importance of taking
+          risks and learning from mistakes:
+        </p>
+        <ul>
+          <li>
+            <strong>Losing pitch competitions</strong> helped us synthesize and
+            communicate our ideas and vision for the company.
+          </li>
+          <li>
+            <strong>Negative feedback</strong> allowed us to discover and
+            resolve the largest pain points in our product.
+          </li>
+          <li>
+            <strong>Difficult team dynamics</strong> taught us the value of open
+            and honest communication, tackling problems together instead of
+            ignoring them.
+          </li>
+        </ul>
+        <p>
+          These lessons were instrumental in building Tapp Sports and have
+          prepared me to effectively navigate my future ventures.
         </p>
         <br />
         <h1>Press</h1>

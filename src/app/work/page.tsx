@@ -65,57 +65,6 @@ const Page = () => {
             </div>
           </div>
         </ProjectCard>
-
-        {/* <ProjectCard
-          wordmark={
-            <img
-              alt="Sketchbook"
-              src="/assets/sketchbook/wordmark.png"
-              className="w-full max-w-[250px] mx-auto opacity-90"
-            />
-          }
-          headline={WORK_DESCRIPTIONS.sketchbook.headline}
-          headingOne="Involvement"
-          paragraphOne={WORK_DESCRIPTIONS.sketchbook.involvement}
-          headingTwo="Summary"
-          paragraphTwo={WORK_DESCRIPTIONS.sketchbook.summary}
-          internalLink={INTERNAL_LINK.WORK + WORK_LINK.SKETCHBOOK}
-          externalLink={EXTERNAL_LINK.SKETCHBOOK}
-        >
-          <div className="gap-2 w-full flex mx-auto flex-col">
-            <div className="contents md:hidden">
-              <Image
-                alt="Product image"
-                src="/assets/sketchbook/sketchbook-cover.png"
-                className="object-scale-down w-full rounded-xl border"
-                width={1600}
-                height={900}
-              />
-              <p className="font-mono text-center text-sm font-extralight">
-                Photo of a Sketchbook
-              </p>
-            </div>
-            <div className="hidden md:grid grid-cols-2 w-full  gap-4">
-              <Image
-                alt="Create page"
-                src="/assets/sketchbook/shot-1.png"
-                className="object-scale-down w-full rounded-xl border mt-4 brightness-[99%] hover:brightness-100 transition duration-300"
-                width={400}
-                height={800}
-              />
-              <Image
-                alt="Sale page"
-                src="/assets/sketchbook/shot-3.png"
-                className="object-scale-down w-full rounded-xl border mt-4 brightness-[99%] hover:brightness-100 transition duration-300"
-                width={400}
-                height={800}
-              />
-            </div>
-            <p className="hidden md:inline-block font-mono text-center text-sm font-extralight">
-              Screenshots from the Sketchbook app
-            </p>
-          </div>
-        </ProjectCard> */}
         <ProjectCard
           wordmark={
             <img
