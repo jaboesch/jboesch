@@ -75,23 +75,29 @@ const Footer = (props: Props) => {
             </Link>
             <div className="w-full h-[1px] bg-gradient-to-r from-black/20 to-black/5" />
             <Link
+              href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.HASHMARK}
+              className={linkStyles}
+            >
+              Hashmark
+            </Link>
+            <Link
               href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
               className={linkStyles}
             >
               JSynth
             </Link>
-            {/* <Link
-              href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.SWORD_FIGHTING}
+            <Link
+              href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.DANCE_MARATHON}
               className={linkStyles}
             >
-              Generative Duels
+              Dance Marathon
             </Link>
             <Link
-              href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.BLOG}
+              href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.PIKE_WEBSITE}
               className={linkStyles}
             >
-              Hashmark Blog
-            </Link> */}
+              PIKE Website
+            </Link>
           </div>
         </div>
       </ContentContainer>

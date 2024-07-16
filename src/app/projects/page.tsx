@@ -15,10 +15,25 @@ const Page = () => {
           <LedGrid value={"PROJECTS"} gridStyle="grid-cols-8" delay={50} />
         </div>
         <ProjectCard
-          wordmark={<h2 className="font-exa uppercase text-black/90 font-light text-3xl">JSynth</h2>}
+          wordmark={
+            <h2 className="font-exa uppercase text-black/90 font-light text-3xl">
+              JSynth
+            </h2>
+          }
           headline={PROJECT_DESCRIPTIONS.jsynth.headline}
           headingOne="Involvement"
-          paragraphOne={PROJECT_DESCRIPTIONS.jsynth.involvement}
+          paragraphOne={
+            <>
+              <span className="font-bold">
+                - {PROJECT_DESCRIPTIONS.jsynth.role}&nbsp;&nbsp;
+              </span>
+              <span className="font-extralight tracking-wider">
+                ({PROJECT_DESCRIPTIONS.jsynth.date})
+              </span>
+              <br />
+              <span>- {PROJECT_DESCRIPTIONS.jsynth.involvementSummary}</span>
+            </>
+          }
           headingTwo="Summary"
           paragraphTwo={PROJECT_DESCRIPTIONS.jsynth.summary}
           internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
@@ -44,6 +59,112 @@ const Page = () => {
               />
               <p className="font-mono text-center text-sm font-extralight">
                 Synth with active notes
+              </p>
+            </div>
+          </div>
+        </ProjectCard>
+
+        <ProjectCard
+          wordmark={
+            <img
+              className="w-full max-w-[340px] mb-1 opacity-90"
+              src="/assets/pike/wordmark-1.png"
+              alt="Pike"
+            />
+          }
+          headline={PROJECT_DESCRIPTIONS.pike.headline}
+          headingOne="Involvement"
+          paragraphOne={
+            <>
+              <span className="font-bold">
+                - {PROJECT_DESCRIPTIONS.pike.role}&nbsp;&nbsp;
+              </span>
+              <span className="font-extralight tracking-wider">
+                ({PROJECT_DESCRIPTIONS.pike.date})
+              </span>
+              <br />
+              <span>- {PROJECT_DESCRIPTIONS.pike.involvementSummary}</span>
+            </>
+          }
+          headingTwo="Summary"
+          paragraphTwo={PROJECT_DESCRIPTIONS.pike.summary}
+          internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.PIKE_WEBSITE}
+        >
+          <div className="gap-2 w-full flex mx-auto flex-col">
+            <Image
+              alt="Landing page"
+              src="/assets/pike/landing.png"
+              className="object-scale-down w-full border rounded-xl brightness-[99%] hover:brightness-100"
+              width={1600}
+              height={900}
+            />
+            <p className="font-mono text-center text-sm font-extralight">
+              Landing Page
+            </p>
+            <div className="hidden md:contents">
+              <Image
+                alt="Info Section"
+                src="/assets/pike/feature.png"
+                className="object-scale-down border w-full rounded-xl mt-4 brightness-[99%] hover:brightness-100"
+                width={1600}
+                height={900}
+              />
+              <p className="font-mono text-center text-sm font-extralight">
+                Informational Section with Preamble
+              </p>
+            </div>
+          </div>
+        </ProjectCard>
+
+        <ProjectCard
+          wordmark={
+            <img
+              className="w-full max-w-[200px] mb-1 opacity-90"
+              src="/assets/dance-marathon/wordmark-short.png"
+              alt="UNDM"
+            />
+          }
+          headline={PROJECT_DESCRIPTIONS.danceMarathon.headline}
+          headingOne="Involvement"
+          paragraphOne={
+            <>
+              <span className="font-bold">
+                - {PROJECT_DESCRIPTIONS.danceMarathon.role}&nbsp;&nbsp;
+              </span>
+              <span className="font-extralight tracking-wider">
+                ({PROJECT_DESCRIPTIONS.danceMarathon.date})
+              </span>
+              <br />
+              <span>
+                - {PROJECT_DESCRIPTIONS.danceMarathon.involvementSummary}
+              </span>
+            </>
+          }
+          headingTwo="Summary"
+          paragraphTwo={PROJECT_DESCRIPTIONS.danceMarathon.summary}
+          internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.DANCE_MARATHON}
+        >
+          <div className="gap-2 w-full flex mx-auto flex-col">
+            <Image
+              alt="Countdown"
+              src="/assets/dance-marathon/countdown.png"
+              className="object-scale-down w-full border rounded-xl brightness-[99%] hover:brightness-100"
+              width={1600}
+              height={900}
+            />
+            <p className="font-mono text-center text-sm font-extralight">
+              Live countdown until fundraiser
+            </p>
+            <div className="hidden md:contents">
+              <Image
+                alt="Sponsorship"
+                src="/assets/dance-marathon/sponsorship.png"
+                className="object-scale-down border w-full rounded-xl mt-4 brightness-[99%] hover:brightness-100"
+                width={1600}
+                height={900}
+              />
+              <p className="font-mono text-center text-sm font-extralight">
+                Sponsorship detail cards
               </p>
             </div>
           </div>

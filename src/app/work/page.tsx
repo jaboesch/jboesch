@@ -4,7 +4,7 @@ import ContentContainer from "@/components/layout/contentContainer";
 import LedGrid from "@/components/ledGrid";
 import ProjectCard from "@/components/projectCard";
 import { WORK_DESCRIPTIONS } from "@/constants/descriptions";
-import { EXTERNAL_LINK, INTERNAL_LINK, WORK_LINK } from "@/constants/links";
+import { INTERNAL_LINK, WORK_LINK } from "@/constants/links";
 import Image from "next/image";
 
 const Page = () => {
@@ -75,7 +75,18 @@ const Page = () => {
           }
           headline={WORK_DESCRIPTIONS.tapp.headline}
           headingOne="Involvement"
-          paragraphOne={WORK_DESCRIPTIONS.tapp.involvementSummary}
+          paragraphOne={
+            <>
+              <span className="font-bold">
+                - {WORK_DESCRIPTIONS.tapp.role}&nbsp;&nbsp;
+              </span>
+              <span className="font-extralight tracking-wider">
+                ({WORK_DESCRIPTIONS.tapp.date})
+              </span>
+              <br />
+              <span>- {WORK_DESCRIPTIONS.tapp.involvementSummary}</span>
+            </>
+          }
           headingTwo="Summary"
           paragraphTwo={WORK_DESCRIPTIONS.tapp.summary}
           internalLink={INTERNAL_LINK.WORK + WORK_LINK.TAPP}

@@ -68,6 +68,11 @@ body {
   color: #f0f0f0;
 }
 
+.emboss-dark {
+  text-shadow: 2px 1px 1px #ababab, -2px -1px 2px #ffffff;
+  color: #f0f0f0;
+}
+
 .card {
   background: #f0f0f0;
   border: #ffffff;

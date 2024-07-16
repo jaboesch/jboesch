@@ -79,6 +79,34 @@ export default function Home() {
               JSynth
             </h2>
           </MiniProjectCard>
+          <MiniProjectCard
+            headline={PROJECT_DESCRIPTIONS.hashmark.headline}
+            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.HASHMARK}
+          >
+            <h2 className="font-exa uppercase text-black/90 font-medium text-3xl">
+              Hashmark
+            </h2>
+          </MiniProjectCard>
+          <MiniProjectCard
+            headline={PROJECT_DESCRIPTIONS.pike.headline}
+            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.PIKE_WEBSITE}
+          >
+            <img
+              className="w-full max-w-[340px] mb-1 opacity-90"
+              src="/assets/pike/wordmark-1.png"
+              alt="Pike"
+            />
+          </MiniProjectCard>
+          <MiniProjectCard
+            headline={PROJECT_DESCRIPTIONS.danceMarathon.headline}
+            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.DANCE_MARATHON}
+          >
+            <img
+              className="w-full max-w-[300px] opacity-90"
+              src="/assets/dance-marathon/wordmark-short.png"
+              alt="Dance Marathon"
+            />
+          </MiniProjectCard>
         </div>
       </div>
     </ContentContainer>

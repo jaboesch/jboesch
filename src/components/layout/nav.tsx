@@ -2,7 +2,7 @@ import React from "react";
 import ContentContainer from "./contentContainer";
 import Link from "next/link";
 import clsx from "clsx";
-import { EXTERNAL_LINK, INTERNAL_LINK } from "@/constants/links";
+import { INTERNAL_LINK } from "@/constants/links";
 
 type Props = {};
 
@@ -28,7 +28,7 @@ const Nav = (props: Props) => {
               />
             </Link>
           </div>
-          <Link href={EXTERNAL_LINK.BLOG} className={clsx(linkStyles)}>
+          <Link href={INTERNAL_LINK.BLOG} className={clsx(linkStyles)}>
             Blog
           </Link>
           <Link href={INTERNAL_LINK.ABOUT} className={clsx(linkStyles)}>
