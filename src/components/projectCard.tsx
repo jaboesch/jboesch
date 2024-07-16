@@ -30,7 +30,7 @@ const ProjectCard = ({
           {wordmark}
         </div>
       </div>
-      <div className="card w-full px-5 mt-[45px] py-[75px]">
+      <div className="card w-full px-5 mt-[45px] pb-[25px] md:pb-[50px] pt-[75px]">
         <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
           <div className="gap-2 w-full flex mx-auto flex-col">
             <p className="font-mono tracking-wider font-bold text-center md:text-start uppercase text-xl md:text-4xl emboss">
@@ -40,20 +40,23 @@ const ProjectCard = ({
             <h2 className="font-exa font-light text-center tracking-tight align-bottom lg:text-start text-3xl">
               {headingOne}
             </h2>
-            <p className="font-serif text-black/70 leading-snug text-base md:text-lg text-justify lg:text-start mb-1">
+            <p className="font-serif text-black/70 leading-snug text-base md:text-lg text-start mb-1">
               {paragraphOne}
             </p>
             <h2 className="font-exa font-light text-center align-bottom lg:text-start text-3xl">
               {headingTwo}
             </h2>
-            <p className="font-serif text-black/70 leading-snug text-base md:text-lg text-justify lg:text-start mb-4">
+            <p className="font-serif text-black/70 leading-snug text-base md:text-lg text-start mb-4">
               {paragraphTwo}
             </p>
-            <div className="flex flex-row gap-4">
+            <div className="hidden md:contents">
               <Button href={internalLink}>Learn More</Button>
             </div>
           </div>
           <div className="gap-2 w-full flex mx-auto flex-col">{children}</div>
+          <div className="contents md:hidden">
+            <Button href={internalLink}>Learn More</Button>
+          </div>
         </div>
       </div>
     </div>

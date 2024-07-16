@@ -66,11 +66,11 @@ const Page = (props: Props) => {
             {ABOUT_DESCRIPTIONS.summary}
           </p>
         </div>
-        <div className="card max-w-[800px] w-full px-0 pt-5 md:p-10 flex flex-col gap-3 justify-center">
+        <div className="card max-w-[800px] w-full px-1.5 pb-1.5 pt-5 md:p-10 flex flex-col gap-3 justify-center">
           <h2 className="font-exa text-center lg:text-start text-3xl mb-2">
             Education
           </h2>
-          <div className="inset-card p-3 md:p-5 md:rounded-xl overflow-hidden w-full max-w-[800px]">
+          <div className="inset-card p-3 md:p-5 rounded-md md:rounded-xl overflow-hidden w-full max-w-[800px]">
             <div className="font-mono text-black/90 text-base tracking-tight leading-snug">
               <span className="text-blue-700 font-medium">
                 me@jboesch.com &gt;&nbsp;
@@ -89,6 +89,7 @@ const Page = (props: Props) => {
             </div>
           </div>
         </div>
+        <br/>
         {/* <div className="inset-card max-w-[800px] w-full p-8 md:p-10 flex flex-col gap-3 justify-center">
           <h2 className="font-exa text-center lg:text-start text-3xl">
             Personal Statement
