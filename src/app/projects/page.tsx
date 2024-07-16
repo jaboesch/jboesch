@@ -40,7 +40,7 @@ const Page = () => {
         >
           <div className="gap-2 w-full flex mx-auto flex-col">
             <Image
-              alt="Landing page"
+              alt="Resting Synth"
               src="/assets/jsynth/at-rest.png"
               className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
               width={1600}
@@ -51,7 +51,7 @@ const Page = () => {
             </p>
             <div className="hidden md:contents">
               <Image
-                alt="Landing page"
+                alt="Active Synth"
                 src="/assets/jsynth/synth-screenshot.png"
                 className="object-scale-down w-full rounded-xl mt-4 border brightness-[99%] hover:brightness-100"
                 width={1600}
@@ -153,7 +153,7 @@ const Page = () => {
               height={900}
             />
             <p className="font-mono text-center text-sm font-extralight">
-              Live countdown until fundraiser
+              Live countdown for fundraiser
             </p>
             <div className="hidden md:contents">
               <Image

@@ -58,16 +58,16 @@ export const PROJECT_DESCRIPTIONS = {
     date: "01/2020 - 01/2021",
     headline: "Recruitment website for PIKE at the Univ. of Nebraska, Lincoln.",
     summary:
-      "The project entailed a complete overhaul of the Pi Kappa Alpha fraternity’s public website, updating both the design and technical infrastructure to enhance recruitment efforts and align with modern web standards.",
+      "This project involved a complete overhaul of the Pi Kappa Alpha fraternity's public website at UNL, updating both the design and technical infrastructure to enhance recruitment efforts and align with modern web standards.",
     involvementSummary:
-      "Led the redesign and development of the website using HTML/CSS/JS, implemented changes to the underlying .NET application, and significantly improved web engagement by 50% as measured by social media promotion and user interactions.",
+      "Independently designed and developed the new website using HTML/CSS/JS, implemented changes to the underlying .NET application, and significantly improved web engagement by 50% as measured by social media promotion and user interactions.",
   },
   danceMarathon: {
     role: "Volunteer Developer",
     date: "09/2019 - 05/2020",
     headline: "Fundraising website for Children's Miracle Network Hospitals.",
     summary:
-      "The UNDM project involves redesigning the University of Nebraska Dance Marathon website, a key platform for fundraising and engaging students in support of pediatric cancer research and local children’s hospitals.",
+      "The UNDM project involved redesigning the University of Nebraska Dance Marathon website, a key platform for fundraising and engaging students in support of pediatric cancer research and local children's hospitals.",
     involvementSummary:
       "Volunteered as part of a student team; responsible for developing the Corporate Sponsorship and Blog pages using Ruby on Rails and SCSS, alongside contributing to various components and performing code reviews.",
   },
