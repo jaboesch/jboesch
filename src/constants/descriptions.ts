@@ -48,8 +48,8 @@ export const PROJECT_DESCRIPTIONS = {
     role: "Co-Creator",
     date: "Summer of 2024",
     headline: `An open-source, fully decentralized blogging platform.`,
-    summary: ``,
-    involvementSummary: ``,
+    summary: `HashMark is a decentralized blogging tool designed to simplify the writing and publishing process. It is intentionally designed for modular use in any website and with no business model, completely free of advertisements, subscriptions, and paywalls.`,
+    involvementSummary: `Collaborated to build the blogging platform with React, Next.js, and Typescript, including a fully-featured HTML editor built on top of Prose Mirror. Integrated with Arweave and Ethereum to ensure free, decentralized storage and authenticity of posts.`,
   },
   jsynth: {
     role: "Creator",

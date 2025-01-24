@@ -14,6 +14,83 @@ const Page = () => {
         <div className="max-w-[700px] mx-auto w-full my-5 md:my-8">
           <LedGrid value={"PROJECTS"} gridStyle="grid-cols-8" delay={50} />
         </div>
+
+        <ProjectCard
+          wordmark={
+            <h2 className="font-exa uppercase text-black/90 font-light text-center text-2xl">
+              AI Knowledge Graph
+            </h2>
+          }
+          headline={PROJECT_DESCRIPTIONS.knowledgeGraph.headline}
+          headingOne="Involvement"
+          paragraphOne={
+            <>
+              <span className="font-bold">
+                - {PROJECT_DESCRIPTIONS.knowledgeGraph.role}&nbsp;&nbsp;
+              </span>
+              <span className="font-extralight tracking-wider">
+                ({PROJECT_DESCRIPTIONS.knowledgeGraph.date})
+              </span>
+              <br />
+              <span>- {PROJECT_DESCRIPTIONS.knowledgeGraph.involvementSummary}</span>
+            </>
+          }
+          headingTwo="Summary"
+          paragraphTwo={PROJECT_DESCRIPTIONS.knowledgeGraph.summary}
+          internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.KNOWLEDGE_GRAPH}
+        >
+          <div className="gap-2 w-full flex mx-auto flex-col">
+            <Image
+              alt="Harry Potter Knowledge Graph"
+              src="/assets/knowledge-graph/hp-full-graph.jpg"
+              className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
+              width={1600}
+              height={1600}
+            />
+            <p className="font-mono text-center text-sm font-extralight">
+              Knowledge Graph generated from the Harry Potter Wikipedia article.
+            </p>
+          </div>
+        </ProjectCard>
+
+        <ProjectCard
+          wordmark={
+            <h2 className="font-exa uppercase text-black/90 font-light text-center text-3xl">
+              Hashmark
+            </h2>
+          }
+          headline={PROJECT_DESCRIPTIONS.hashmark.headline}
+          headingOne="Involvement"
+          paragraphOne={
+            <>
+              <span className="font-bold">
+                - {PROJECT_DESCRIPTIONS.hashmark.role}&nbsp;&nbsp;
+              </span>
+              <span className="font-extralight tracking-wider">
+                ({PROJECT_DESCRIPTIONS.hashmark.date})
+              </span>
+              <br />
+              <span>- {PROJECT_DESCRIPTIONS.hashmark.involvementSummary}</span>
+            </>
+          }
+          headingTwo="Summary"
+          paragraphTwo={PROJECT_DESCRIPTIONS.hashmark.summary}
+          internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.HASHMARK}
+        >
+          <div className="gap-2 w-full flex mx-auto flex-col">
+            <Image
+              alt="Hashmark Editor"
+              src="/assets/hashmark/editor-portrait.png"
+              className="object-scale-down w-full rounded-xl border brightness-[99%] hover:brightness-100"
+              width={900}
+              height={1600}
+            />
+            <p className="font-mono text-center text-sm font-extralight">
+              Hashmark Interactive HTML Editor 
+            </p>
+          </div>
+        </ProjectCard>
+
         <ProjectCard
           wordmark={
             <h2 className="font-exa uppercase text-black/90 font-light text-3xl">

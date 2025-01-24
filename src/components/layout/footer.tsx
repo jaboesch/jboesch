@@ -75,6 +75,12 @@ const Footer = (props: Props) => {
             </Link>
             <div className="w-full h-[1px] bg-gradient-to-r from-black/20 to-black/5" />
             <Link
+              href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.KNOWLEDGE_GRAPH}
+              className={linkStyles}
+            >
+              AI Knowledge Graph
+            </Link>
+            <Link
               href={INTERNAL_LINK.PROJECTS + PROJECT_LINK.HASHMARK}
               className={linkStyles}
             >
