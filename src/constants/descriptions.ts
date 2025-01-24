@@ -35,16 +35,25 @@ export const WORK_DESCRIPTIONS = {
 };
 
 export const PROJECT_DESCRIPTIONS = {
+  knowledgeGraph: {
+    role: "Creator",
+    date: "Winter of 2024",
+    headline: `An AI agent for creating and querying knowledge graphs.`,
+    summary: `The LLM Knowledge Graph tool can be used to extract key entities and relationships from long text documents. It creates detailed knowledge graphs from text, and the GraphReader agent facilitates RAG with high accuracy for complex queries.`,
+    involvementSummary:
+      "Built the agents with Python, LangChain, and Neo4j, using Llama3.3 for graph creation and GPT-4o for the graph reader agent. Designed workflows for embedding generation, vector search, and neighbor-based traversal to enable accurate knowledge retrieval.",
+  },
+
   hashmark: {
     role: "Co-Creator",
-    date: "07/2024 - Present",
-    headline: `A decentralized blogging platform built for the public good.`,
+    date: "Summer of 2024",
+    headline: `An open-source, fully decentralized blogging platform.`,
     summary: ``,
-    involvement: ``,
+    involvementSummary: ``,
   },
   jsynth: {
     role: "Creator",
-    date: "09/2023 - Present",
+    date: "Fall of 2023",
     headline: `A sonic playground in the form of a web-based synthesizer.`,
     summary: `JSynth is a web-based synthesizer that allows users to experiment with
     unique sounds directly from their browser. The synth features a variety of meters 

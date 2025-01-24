@@ -15,9 +15,6 @@ const Page = (props: Props) => {
         <h2 className="font-exa text-center uppercase text-black/90 font-light text-5xl">
           JSynth
         </h2>
-        <span className="caption">
-          This project is still in-progress, so stay tuned for more updates.
-        </span>
         <Divider className="my-5" />
         <h1>What is this project?</h1>
         <p>{PROJECT_DESCRIPTIONS.jsynth.summary}</p>

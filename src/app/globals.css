@@ -154,6 +154,10 @@ body {
     @apply font-exa tracking-tight align-bottom text-2xl md:text-3xl;
   }
 
+  .article-container h2 {
+    @apply font-exa tracking-tight align-bottom text-2xl md:text-3xl;
+  }
+
   .article-container h3 {
     @apply font-serif text-black/90 leading-snug text-xl md:text-2xl md:leading-snug font-bold;
   }

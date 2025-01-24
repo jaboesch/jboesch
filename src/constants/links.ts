@@ -12,8 +12,9 @@ export enum WORK_LINK {
 }
 
 export enum PROJECT_LINK {
-  JSYNTH = "/jsynth",
+  KNOWLEDGE_GRAPH = "/llm-knowledge-graph",
   HASHMARK = "/hashmark",
+  JSYNTH = "/jsynth",
   DANCE_MARATHON = "/dance-marathon-website",
   PIKE_WEBSITE = "/pi-kappa-alpha-website",
 }
@@ -35,6 +36,7 @@ export enum EXTERNAL_LINK {
   TAPP_PRESS_3 = "https://siliconprairienews.com/2021/07/gbeta-pitch-night-at-nebraska-innovation-campus/",
   TAPP_STARTUP_STUDIO = "https://news.unl.edu/newsrooms/today/article/students-turn-entrepreneurs-at-the-raikes-school/",
   // projects
-  JSYNTH = "https://www.jsynth.art",
+  KNOWLEDGE_GRAPH = "https://github.com/jaboesch/llm-knowledge-graph",
   HASHMARK = "https://www.hashmark.xyz",
+  JSYNTH = "https://www.jsynth.art",
 }
