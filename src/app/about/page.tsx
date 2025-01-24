@@ -31,14 +31,17 @@ const Page = (props: Props) => {
             <div className="flex flex-row justify-center gap-5">
               <IconButton
                 href={EXTERNAL_LINK.TWITTER}
+                inNewWindow
                 iconFilename="x-twitter.svg"
               />
               <IconButton
                 href={EXTERNAL_LINK.GITHUB}
+                inNewWindow
                 iconFilename="github.svg"
               />
               <IconButton
                 href={EXTERNAL_LINK.LINKEDIN}
+                inNewWindow
                 iconFilename="linkedin.svg"
               />
             </div>
@@ -52,6 +55,7 @@ const Page = (props: Props) => {
             <div className="rounded-2xl inset-card w-full flex flex-row items-center max-w-[350px] mx-auto">
               <IconButton
                 href={EXTERNAL_LINK.ETHEREUM}
+                inNewWindow
                 iconFilename="ethereum.svg"
               />
               <CopyButton content="jglitch.eth" />

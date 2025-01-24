@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import React from "react";
+import { EXTERNAL_LINK } from "@/constants/links";
 
 const Page = () => {
   return (
@@ -265,7 +266,7 @@ const Page = () => {
         <Divider className="my-5" />
         <Link
           className="w-full my-10"
-          href="https://github.com/hashmark"
+          href="https://github.com/jaboesch/hashmark"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Hashmark Github"

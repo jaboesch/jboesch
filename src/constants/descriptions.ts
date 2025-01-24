@@ -12,7 +12,7 @@ export const ABOUT_JSON = {
   name: "Jayden Boesch",
   college: "University of Nebraska, Lincoln",
   degree: "Bachelor of Science in Software Engineering",
-  distinction: "Graduated with Highest Distinction",
+  distinction: "Graduated with Highest Distinction (GPA: 3.99)",
   honors: "Jeffrey S. Raikes School and University Honors Program",
   graduation: "May of 2023",
 };

@@ -25,7 +25,7 @@ export enum EXTERNAL_LINK {
   // socials
   TWITTER = "https://twitter.com/boeschjayden",
   GITHUB = "https://github.com/jaboesch",
-  LINKEDIN = "https://linkedin.com/in/jayden-boesch-b60a33182",
+  LINKEDIN = "https://linkedin.com/in/jayden-boesch",
   EMAIL = `mailto:${PUBLIC_EMAIL}`,
   ETHEREUM = "https://etherscan.io/address/0x1055C9C74284DB0f48A0CaaE1034631cdedeE3d4",
   // work
