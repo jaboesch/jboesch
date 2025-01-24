@@ -6,6 +6,8 @@ import { EXTERNAL_LINK, INTERNAL_LINK } from "@/constants/links";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import React from "react";
 import { theme } from "@/constants/codeBlockTheme";
+import Link from "next/link";
+import Image from "next/image";
 
 type Props = {};
 
@@ -60,6 +62,30 @@ const Page = (props: Props) => {
               />
               <CopyButton content="jglitch.eth" />
             </div>
+            <div className="rounded-2xl inset-card w-full flex flex-row items-center max-w-[350px] mx-auto">
+              <IconButton
+                href={INTERNAL_LINK.RESUME}
+                inNewWindow
+                iconFilename="user-solid.svg"
+              />
+              <Link
+                href={INTERNAL_LINK.RESUME}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex w-full group flex-row gap-2 items-center justify-between mx-4 cursor-pointer transition duration-100"
+              >
+                <span className="font-mono font-extralight text-lg">
+                  View Resume
+                </span>
+                <Image
+                  src="/assets/icons/download-solid.svg"
+                  className="opacity-20 group-hover:opacity-40 group-hover:scale-110 transition duration-500"
+                  height={15}
+                  width={15}
+                  alt=""
+                />
+              </Link>
+            </div>
           </div>
         </div>
         <div className="card max-w-[800px] w-full p-8 md:p-10 flex flex-col gap-3 justify-center">
@@ -93,7 +119,7 @@ const Page = (props: Props) => {
             </div>
           </div>
         </div>
-        <br/>
+        <br />
         {/* <div className="inset-card max-w-[800px] w-full p-8 md:p-10 flex flex-col gap-3 justify-center">
           <h2 className="font-exa text-center lg:text-start text-3xl">
             Personal Statement

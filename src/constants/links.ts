@@ -4,6 +4,7 @@ export enum INTERNAL_LINK {
   WORK = "/work",
   PROJECTS = "/projects",
   BLOG = "/blog",
+  RESUME = "/assets/jayden-boesch-resume-jan-2025.pdf",
 }
 
 export enum WORK_LINK {
