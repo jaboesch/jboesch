@@ -1,11 +1,11 @@
 export const ABOUT_DESCRIPTIONS = {
-  summary: `My name is Jayden, and I create applications and art with
-    software. I have worked as a technical co-founder at two startups,
-    building the entire tech stack from the ground up. Beyond
-    functional code, I also love blending creativity and technology to
-    bring unique ideas to life through artistic code projects. Take a
-    look around to learn more about my work!`,
-  aboutMe: `I am a software engineer based in NYC. I have a passion for...`,
+  summary: `
+    I’m a software engineer with experience building software from the ground 
+    up as CTO and Co-Founder of two startups. I specialize in fullstack development 
+    (React, Next.js, Node.js, TypeScript) and cloud-native systems (GCP, AWS). I 
+    enjoy working on code projects for fun and function, with my creations ranging from 
+    an AI Knowledge Graph tool to a Web-Based Synthesizer. Please take a look around 
+    to explore my work!`,
 };
 
 export const ABOUT_JSON = {
