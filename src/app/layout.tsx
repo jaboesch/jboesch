@@ -6,7 +6,7 @@ import RootContainer from "@/components/layout/rootContainer";
 
 export const metadata: Metadata = {
   title: "Jayden Boesch",
-  description: "Show the process.",
+  description: "Personal website showcasing Jayden Boesch's work and projects.",
   keywords: ["Jayden", "Boesch", "Portfolio"],
   icons: {
     icon: "/assets/favicon.png",
@@ -17,27 +17,26 @@ export const metadata: Metadata = {
       url: "/assets/favicon.png",
     },
   },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: "Ensemble",
-  //   description: "Show the process.",
-  //   creator: "@ensembledotart",
-  //   images: ["Show the process."],
-  // },
-  // openGraph: {
-  //   title: "Ensemble",
-  //   description: "Show the process.",
-  //   siteName: "Ensemble",
-  //   images: [
-  //     {
-  //       url: "https://ensemble.art/images/small-ensemble-cover.png",
-  //       width: 444,
-  //       height: 250,
-  //     },
-  //   ],
-  //   locale: "en_US",
-  //   type: "website",
-  // },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jayden Boesch",
+    description: "Personal website showcasing Jayden Boesch's work and projects.",
+    creator: "@BoeschJayden",
+  },
+  openGraph: {
+    title: "Jayden Boesch",
+    description: "Personal website showcasing Jayden Boesch's work and projects.",
+    siteName: "Jayden Boesch",
+    images: [
+      {
+        url: "https://jboesch.com/assets/cover.png",
+        width: 500,
+        height: 258,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 const lexend = Lexend({

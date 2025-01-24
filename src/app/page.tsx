@@ -72,11 +72,11 @@ export default function Home() {
             />
           </MiniProjectCard>
           <MiniProjectCard
-            headline={PROJECT_DESCRIPTIONS.jsynth.headline}
-            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
+            headline={PROJECT_DESCRIPTIONS.knowledgeGraph.headline}
+            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.KNOWLEDGE_GRAPH}
           >
             <h2 className="font-exa uppercase text-black/90 font-medium text-3xl">
-              JSynth
+              Knowledge Graph
             </h2>
           </MiniProjectCard>
           <MiniProjectCard
@@ -88,24 +88,12 @@ export default function Home() {
             </h2>
           </MiniProjectCard>
           <MiniProjectCard
-            headline={PROJECT_DESCRIPTIONS.pike.headline}
-            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.PIKE_WEBSITE}
+            headline={PROJECT_DESCRIPTIONS.jsynth.headline}
+            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.JSYNTH}
           >
-            <img
-              className="w-full max-w-[340px] mb-1 opacity-90"
-              src="/assets/pike/wordmark-1.png"
-              alt="Pike"
-            />
-          </MiniProjectCard>
-          <MiniProjectCard
-            headline={PROJECT_DESCRIPTIONS.danceMarathon.headline}
-            internalLink={INTERNAL_LINK.PROJECTS + PROJECT_LINK.DANCE_MARATHON}
-          >
-            <img
-              className="w-full max-w-[300px] opacity-90"
-              src="/assets/dance-marathon/wordmark-short.png"
-              alt="Dance Marathon"
-            />
+            <h2 className="font-exa uppercase text-black/90 font-medium text-3xl">
+              JSynth
+            </h2>
           </MiniProjectCard>
         </div>
       </div>
